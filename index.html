@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Масштабируемая сцена</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node-styles.css">
+    <link rel="stylesheet" href="arrows.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+</head>
+<body>
+    <div class="viewport">
+        <div class="canvas">
+            <div class="box" id="c-1">
+                <div class="box-header">
+                    <h3>C - I</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="SimpleBashUtils" 
+                    data-tooltip-description="Development of Bash text utilities: cat, grep." data-tooltip-xp="XP - 100" 
+                    data-git-url="https://github.com/MeshCube/SimpleBashUtils">
+                        <div class="circle active"></div>
+                        SimpleBashUtils
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="s21_string+" 
+                        data-tooltip-description="Implementation of the string.h library with additions." data-tooltip-xp="XP - 100"
+                        data-git-url="https://github.com/MeshCube/s21_string_plus">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        s21_string+
+                    </div>
+                    <div class="dropdown-item" id = "active" data-tooltip-title="s21_decimal" 
+                        data-tooltip-description="Implementation of your own s21_decimal.h library" data-tooltip-xp="XP - 100"
+                        data-git-url="https://github.com/MeshCube/s21_decimal">
+                        <div class="circle-active circle-container" id="circleContainer"></div> 
+                        s21_decimal
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="s21_matrix" 
+                        data-tooltip-description="Implementation of the matrix.h library." data-tooltip-xp="XP - 100" 
+                        data-git-url="https://github.com/MeshCube/s21_matrix">
+                        <div class="circle-active circle"></div>
+                        s21_matrix
+                    </div>
+                    <div class="dropdown-item" id = "active" data-tooltip-title="C7_BrickGame_v1.0" 
+                        data-tooltip-description="In this project, you will have to implement the game 'Tetris' in the C programming language." data-tooltip-xp="XP - 100"
+                        data-git-url="https://github.com/MeshCube/C7_BrickGame_v1.0">
+                        <div class="circle-active circle"></div>
+                        C7_BrickGame_v1.0
+                    </div>
+                </div>
+            </div>    
+
+            <div class="box" id="DO-1">
+                <div class="box-header">
+                    <h3>DO - I</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="DO1_Linux" 
+                    data-tooltip-description="Linux system installation and updates. Administration basics." 
+                    data-tooltip-xp="XP - 100" 
+                    data-git-url="https://github.com/MeshCube/DO1_Linux">
+                        <div class="circle circle-active"></div>
+                        DO1_Linux
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="DO2_Linux Network" 
+                        data-tooltip-description="Linux networks configuration on virtual machines." data-tooltip-xp="XP - 100" 
+                        data-git-url="https://github.com/MeshCube/DO2_Linux-Network">
+                        <div class="circle circle-active"></div>
+                        DO2_Linux Network
+                    </div>
+                    <div class="dropdown-item" id = "active" data-tooltip-title="DO5_SimpleDocker" 
+                        data-tooltip-description="Introduction to docker. Developing a simple docker image for your own server." data-tooltip-xp="XP - 100"
+                        data-git-url="https://github.com/MeshCube/DO5_SimpleDocker">
+                        <div class="circle circle-active"></div>
+                        DO5_SimpleDocker
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="DO6_CICD" 
+                        data-tooltip-description="Development of a simple CI/CD for the SimpleBashUtils project. Building, testing, deployment." data-tooltip-xp="XP - 100" 
+                        data-git-url="https://github.com/MeshCube/DO6_CICD">
+                        <div class="circle circle-active"></div>
+                        DO6_CICD
+                    </div>
+                </div>
+            </div>    
+
+            <div class="box" id="DO-Exm">
+                <div class="box-header">
+                    <h3>DevOps Exam</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        DO_Ex-t
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="Alg-1">
+                <div class="box-header">
+                    <h3>Algorithms - I</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                        A1_Maze
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                        A1_Maze_CPP
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                        A1_Maze_Python
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                        A1_Maze_Go
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                        A1_Maze_C#
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                        A1_Maze_Java
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                        A1_Maze_JavaScript
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                        A1_Maze_Kotlin
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                        A1_Maze_Swift
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="Alg-2">
+                <div class="box-header">
+                    <h3>Algorithms - II</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                    A2_SimpleNavigator_v1.0
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                    A2_SimpleNavigatorV1.0_CPP
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                    A2_SimpleNavigatorV1.0_Pyt..
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                    A2_SimpleNavigatorV1.0_Go
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                    A2_SimpleNavigatorV1.0_C#
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                    A2_SimpleNavigatorV1.0_Java
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                    A2_SimpleNavigatorV1.0_JavaS..
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                    A2_SimpleNavigatorV1.0_Kotlin
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                    <div class="circle-container circle-active" id="circleContainer"></div>
+                    A2_SimpleNavigatorV1.0_Swift
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="Alg-Exm">
+                <div class="box-header">
+                    <h3>Algorithms Exam</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        A_Ex
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="CPP-1">
+                <div class="box-header">
+                    <h3>CPP - I</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        s21_matrix+
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        s21_containers
+                    </div>
+                    <div class="dropdown-item" id = "active" data-tooltip-title="Title for C2_Infra" 
+                        data-tooltip-description="Description for C2_Infra" data-tooltip-xp="XP for C2_Infra">
+                        <div class="circle circle-active"></div>
+                        CPP3_BrickGame_v2.0
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        3DViewer_v2.0
+                    </div>
+                </div>
+            </div>    
+
+            <div class="box" id="CPP-Exm">
+                <div class="box-header">
+                    <h3>CPP Exam</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        CPP_Ex
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="AP-1">
+                <div class="box-header">
+                    <h3>Applied Programming - I</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="square square-active"></div>
+                        APP1
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APC1
+                    </div>
+                    <div class="dropdown-item" id = "active" data-tooltip-title="Title for C2_Infra" 
+                        data-tooltip-description="Description for C2_Infra" data-tooltip-xp="XP for C2_Infra">
+                        <div class="circle circle-active"></div>
+                        APJ1
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        Frontend Bootcamp
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        Kotlin Bootcamp
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        Swift Bootcam
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APG1
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="AP-2">
+                <div class="box-header">
+                    <h3>Applied Programming - II</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-actives"></div>
+                        AP2_BrickGame_v3.0_Python
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-actives"></div>
+                        AP2_BrickGame_v3.0_C#
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-actives"></div>
+                        AP2_BrickGame_v3.0_Java
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-actives"></div>
+                        AP2_BrickGame_v3.0_JavaScipt
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-actives"></div>
+                        AP2_BrickGame_v3.0_Kotlin
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-actives"></div>
+                        AP2_BrickGame_v3.0_Swift
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-actives"></div>
+                        AP2_BrickGame_v3.0_Go
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="AP-Exm">
+                <div class="box-header">
+                    <h3>AP Exam</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        APP_Ex
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        APC#_Ex
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        APJ_Ex
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        APJS_Ex
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        APK_Ex
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        APS_Ex
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="SQL-1">
+                <div class="box-header">
+                    <h3>SQL - I</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        SQL1
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="SQL-Exm">
+                <div class="box-header">
+                    <h3>SQL - Exam</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        SQL_Ex
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="Career-track">
+                <div class="box-header">
+                    <h3>Career Track</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        Career track
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        Internship
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="GameDev-1">
+                <div class="box-header">
+                    <h3>Game Development - I</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        Game Development Project 1
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                      data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        Game Development Project 2
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        Game Development Project 3
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        Game Development Project 4
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        Game Development Project 5
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        Game Development Project 6
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        Game Development Project 7
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="BackEnd-1">
+                <div class="box-header">
+                    <h3>BackEnd - I</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        Backend. Project 1
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                      data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        Backend. Project 2
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        Backend. Project 3
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        Backend. Project 4
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        Backend. Project 5
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        Backend. Project 6
+                    </div>
+                    <div class="dropdown-item noactive" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-noactive"></div>
+                        Backend. Project 7
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="CPP-2">
+                <div class="box-header">
+                    <h3>CPP - II</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        3DViewer_v2.1
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        MLP
+                    </div>
+                    <div class="dropdown-item" id = "active" data-tooltip-title="Title for C2_Infra" 
+                        data-tooltip-description="Description for C2_Infra" data-tooltip-xp="XP for C2_Infra">
+                        <div class="circle circle-active"></div>
+                        PhotoLab_v1.0
+                    </div>
+                    <div class="dropdown-item" id = "active" data-tooltip-title="Title for C2_Infra" 
+                        data-tooltip-description="Description for C2_Infra" data-tooltip-xp="XP for C2_Infra">
+                        <div class="circle circle-active"></div>
+                        PhotoLab_v1.0
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="C-2">
+                <div class="box-header">
+                    <h3>C - II</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        3DViewer_v1.0
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        s21_math
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="DS-1">
+                <div class="box-header">
+                    <h3>Data Science - I</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        Data Science Bootcamp
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="DS-2">
+                <div class="box-header">
+                    <h3>Data Science - II</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        DS. Project 01.
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        DS. Project 02. Churn prediction
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        DS. Project 03.
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        DS. Project 04.
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        DS. Project 05.
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        DS. Project 06.
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        DS. Project 07.
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="SQL-2">
+                <div class="box-header">
+                    <h3>SQL - II</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        Info21 v1.0
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        RetailAnalytics v1.0
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="DO-2">
+                <div class="box-header">
+                    <h3>DO - II</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        DO3_LinuxMonitoring v1.0
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        DO4_LinuxMonitoring v2.0
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="Python-2">
+                <div class="box-header">
+                    <h3>Python - II</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        APP2_SmartCalc_v3_Python
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP3_SimpleWebStudio_v1...
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        APP4_Info21_v2_Python
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP5_SmartCalc_v4_Python
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP6_RetailAnalitycs_v2_Py...
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="CSh-2">
+                <div class="box-header">
+                    <h3>C# - II</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        APP2_SmartCalc_v3_C#
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP3_SimpleWebStudio_v1_C#
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        APP4_Info21_v2_C#
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP5_SmartCalc_v4_C#
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP6_RetailAnalitycs_v2_C#
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="GO-2">
+                <div class="box-header">
+                    <h3>GO - II</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        APP2_SmartCalc_v3_GO
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP3_SimpleWebStudio_v1_GO
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        APP4_Info21_v2_GO
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP5_SmartCalc_v4_GO
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP6_RetailAnalitycs_v2_GO
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="Java-2">
+                <div class="box-header">
+                    <h3>Java - II</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        APP2_SmartCalc_v3_Java
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP3_SimpleWebStudio_v1_J...
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        APP4_Info21_v2_Java
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP5_SmartCalc_v4_Java
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        APP6_RetailAnalitycs_v2_Java
+                    </div>
+                </div>
+            </div>  
+
+            <div class="box" id="Alg-c">
+                <div class="box-header">
+                    <h3>Algorithms-C</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        A3_Parallels_C
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        A4_Crypto_C
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        A5_s21_memory_C
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        A6_Transactions_C
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        A7_DNAAnalyzer_C
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        A8_AlgoritmicTrading_C
+                    </div>
+                    
+                </div>
+            </div>  
+
+            <div class="box" id="Alg-cpp">
+                <div class="box-header">
+                    <h3>Algorithms-CPP</h3>
+                    <span class="arrow"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                    data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                    data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        A3_Parallels_CPP
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        A4_Crypto_CPP
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        A5_s21_memory_CPP
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        A6_Transactions_CPP
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for SimpleAuthLib" 
+                        data-tooltip-description="Description for SimpleAuthLib" data-tooltip-xp="XP for SimpleAuthLib" 
+                        data-git-url="https://github.com/">
+                        <div class="circle circle-active"></div>
+                        A7_DNAAnalyzer_CPP
+                    </div>
+                    <div class="dropdown-item active" data-tooltip-title="Title for C1_Settings" 
+                        data-tooltip-description="Description for C1_Settings" data-tooltip-xp="XP for C1_Settings" >
+                        <div class="circle-container circle-active" id="circleContainer"></div>
+                        A8_AlgoritmicTrading_CPP
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow-container" style="top: -796px; left: -290px;">
+                <div class="line" style="width:400px;"></div>
+                <div class="lline-up" style="height: 115px; top:-64px;"></div>
+                <div class="line" style="top:-64%;left:100%; width:88px;"></div>
+                <div class="rarrows" style="top:-64%; left:1045px"></div>
+
+                <div class="line" style="top:-64%;left:350px; width:695px"></div>
+                <div class="rarrows" style="top:-64%;left:185%"></div>
+                
+                <div class="line" style="top:-64%;left:1210px; width:80px"></div>
+
+                <div class="lline-down" style="height: 697px; left:30px"></div>
+                <div class="line" style="top:338px;left:30px; width:108px"></div>
+                <div class="rarrows" style="top:338px;left:135%"></div>
+
+                <!-- SQL-1 -->
+                <div class="line" style="top:746px;left:30px; width:108px"></div>
+                <div class="rarrows" style="top:746px;left:135%"></div>
+
+                <!-- SQL-1 - Sql-Exm-->
+                <div class="line" style="top:746px;left:300px; width:742px"></div>
+                <div class="rarrows" style="top:746px;left:1045%"></div>
+
+
+                <div class="lline-down" style="left:398px; height:23px;"></div>
+                <div class="line" style="left:398px; top:73px; width:135px"></div>
+                <div class="rarrows" style="top:73px;left:533px"></div>
+
+                <div class="line" style="left:700px; top:73px; width:87px"></div>
+                <div class="rarrows" style="top:73px; left:785px"></div>
+
+                <div class="line" style="left:950px; top:73px; width:97px"></div>
+                <div class="rarrows" style="top:73px;left:1045px"></div>
+
+                <!-- Alg-Exm -->
+                <div class="line" style="top:73px;left:1210px; width:80px"></div>
+
+                <div class="line" style="left:300px; top:338px; width:740px"></div>
+                <div class="rarrows" style="top:338px; left:1045px"></div>
+
+                
+                <!-- APP-1 -->
+                <div class="lline-down" style="top: 338px; left:398px; height:142px;"></div>
+                <div class="line" style="left:398px; top:480px; width:135px"></div>
+                <div class="rarrows" style="top:480px;left:535px"></div>
+                <!-- APP-2 -->
+                <div class="line" style="left:700px; top:480px; width:87px"></div>
+                <div class="rarrows" style="top:480px;left:785px"></div>
+                <!-- APP-Exm -->
+                <div class="line" style="left:950px; top:480px; width:95px"></div>
+                <div class="rarrows" style="top:480px;left:1045px"></div>
+                
+                <!-- CPP-Exm -->
+                <div class="line" style="top:338px; left:1210px; width:80px"></div>
+
+                <!-- AP-Exm -->
+                <div class="line" style="top:481px;left:1210px; width:80px"></div>
+
+                <!-- SQL-Exm -->
+                <div class="line" style="top:746px;left:1210px; width:80px"></div>
+                <!-- |->Career-track -->
+                <div class="lline-down" style="top: -64px; left:1288px; height:809px;"></div>
+                <div class="line" style="top:186px;left:1290px; width:68px"></div>
+                <div class="rarrows" style="top:186px; left:1355px;"></div>
+
+                <!-- Career-track ->| -->
+                <div class="lline-down" style="top: -786px; left:1588px; height:1216px;"></div>
+                <div class="line" style="top:186px;left:1520px; width:68px"></div>
+
+                <!-- Alg-C -->
+                <div class="line" style="top:-786px;left:1588px; width:68px"></div>
+                <div class="rarrows" style="top: -786px; left:1655px;"></div>
+                <!-- Alg-CPP -->
+                <div class="line" style="top:-786px; left:1820px; width:115px"></div>
+                <div class="rarrows" style="top:-786px; left:1935px;"></div>
+
+                <!-- Python-2 -->
+                <div class="line" style="top:-572px;left:1588px; width:68px"></div>
+                <div class="rarrows" style="top: -572px; left:1655px;"></div>
+                <!-- С#-2 -->
+                <div class="line" style="top:-572px; left:1820px; width:115px"></div>
+                <div class="rarrows" style="top:-572px; left:1935px;"></div>
+                <!-- Java-2 -->
+                <div class="line" style="top:-572px; left:2100px; width:118px"></div>
+                <div class="rarrows" style="top: -572px; left:2215px;"></div>
+                <!-- Go-2 -->
+                <div class="line" style="top:-572px; left:2380px; width:117px"></div>
+                <div class="rarrows" style="top:-572px; left:2495px;"></div>
+
+                <!-- DO-2 -->
+                <div class="line" style="top:-392px;left:1588px; width:68px"></div>
+                <div class="rarrows" style="top:-392px; left:1655px;"></div>
+                <!-- SQL-2 -->
+                <div class="line" style="top:-283px;left:1588px; width:68px"></div>
+                <div class="rarrows" style="top:-283px; left:1655px;"></div>
+                <!-- С-2 -->
+                <div class="line" style="top:-178px;left:1588px; width:68px"></div>
+                <div class="rarrows" style="top:-178px; left:1655px;"></div>
+                <!-- Сpp-2 -->
+                <div class="line" style="top:-69px;left:1588px; width:68px"></div>
+                <div class="rarrows" style="top:-69px; left:1655px;"></div>
+                <!-- DS-1 -->
+                <div class="line" style="top:93px;left:1588px; width:68px"></div>
+                <div class="rarrows" style="top:93px; left:1655px;"></div>
+
+                 <!-- DS-2 -->
+                <div class="line" style="top:93px; left:1820px; width:115px"></div>
+                <div class="rarrows" style="top:93px; left:1935px;"></div>
+
+                <!-- GameDev-1 -->
+                <div class="line" style="top:193px; left:1588px; width:68px"></div>
+                <div class="rarrows" style="top:193px; left:1655px;"></div>
+
+                <!-- BackEnd-1 -->
+                <div class="line" style="top:430px;left:1588px; width:71px"></div>
+                <div class="rarrows" style="top: 430px; left:1655px;"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    
+
+    <!-- Tooltip element -->
+    <div class="tooltip" id="tooltip">
+        <div id="tooltip-content"></div>
+        <div class="color-picker">
+            <button class="color-green" data-color="#44EB99"></button>
+            <button class="color-red" data-color="red"></button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

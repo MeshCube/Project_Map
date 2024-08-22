@@ -1,0 +1,83 @@
+.arrow-container {
+    position: relative;
+    top: 0; /* Убедитесь, что здесь стоят нужные значения для позиции */
+    left: 0; /* Убедитесь, что здесь стоят нужные значения для позиции */
+    width: 100px;
+    height: 100px;
+}
+
+.line {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #566678;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.rarrows {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #566678;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.larrows {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid black;
+    transform: rotate(45deg);
+    top: 100%;
+    left: 0;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.rline-up {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: #566678;
+    top: -50%;
+    left: 0%;
+    /* transform: translateX(-50%); */
+}
+
+.rline-down {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: #566678;
+    top: 50%;
+    left: 0%;
+    /* transform: translateX(-50%); */
+}
+
+.lline-up {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: #566678;
+    top: -50%;
+    left: 100%;
+    /* transform: translateX(50%); */
+}
+
+.lline-down {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: #566678;
+    top: 50%;
+    left: 100%;
+    /* transform: translateX(50%); */
+}
