@@ -111,6 +111,19 @@ h3 {
     justify-content: center;
 }
 
+.square {
+    position: relative;
+    width: 10px; /* Размер основного круга */
+    height: 10px; /* Размер основного круга */
+    border: 2px solid; /* Цвет границы основного круга */
+    background-color: transparent; /* Прозрачный внутренний цвет */
+    margin-right: 9px; /* Отступ между кругом и текстом */
+    margin-left: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* .circle-active {
     border-color: #ffffff;
 }

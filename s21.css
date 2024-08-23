@@ -1,0 +1,59 @@
+.step-container {
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.letter {
+    font-family: 'VT323', monospace; /* Пиксельный шрифт VT323 */
+    font-size: 70px; /* Размер шрифта */
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50px);
+    /* Добавление зеленой и белой окантовки */
+    color: #ffffff; /* Цвет текста */
+    text-shadow: 
+        1px 1px 0 #00ff00, /* Зеленая окантовка */
+       -1px -1px 0 #00ff00, /* Зеленая окантовка */
+        1px -1px 0 #00ff00, /* Зеленая окантовка */
+       -1px 1px 0 #00ff00, /* Зеленая окантовка */
+        0 0 5px #ffffff; /* Белый контур */
+}
+
+#letter-s {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.letter.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden {
+    display: inline-block;
+}
+
+.non-clickable {
+    pointer-events: none;
+}
+
+#cd {
+    font-family: 'VT323', monospace; /* Пиксельный шрифт VT323 */
+    font-size: 60px; /* Размер шрифта */
+    position: relative;
+    left: -140px;
+    top: 2px;
+    transition: transform 0.9s;
+    /* Добавление зеленой и белой окантовки */
+    color: #ffffff; /* Цвет текста */
+    text-shadow: 
+        1px 1px 0 #00ff00, /* Зеленая окантовка */
+       -1px -1px 0 #00ff00, /* Зеленая окантовка */
+        1px -1px 0 #00ff00, /* Зеленая окантовка */
+       -1px 1px 0 #00ff00, /* Зеленая окантовка */
+        0 0 5px #ffffff; /* Белый контур */
+}

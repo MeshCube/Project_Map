@@ -122,7 +122,7 @@ let activeItem = null;
 
 document.querySelectorAll('.dropdown-item').forEach(item => {
     item.addEventListener('click', (e) => {
-        if (e.target.classList.contains('circle') || e.target.classList.contains('noactive') || e.target.classList.contains('circle-container') || e.target.classList.contains('circle-three')) {
+        if (e.target.classList.contains('circle') || e.target.classList.contains('square') || e.target.classList.contains('noactive') || e.target.classList.contains('circle-container') || e.target.classList.contains('circle-three')) {
             return;
         }
 
